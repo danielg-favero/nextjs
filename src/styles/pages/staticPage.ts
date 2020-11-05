@@ -10,15 +10,8 @@ export const Container = styled.div`
     align-items: center;
 
     h1{
-        font-size: 54px;
+        font-size: 64px;
         color: ${props => props.theme.colors.primary};
-        margin-top: 40px;
-    }
-
-    p{
-        margin-top: 24px;
-        font-size: 24px;
-        line-height: 32px;
     }
 
     button{
@@ -34,5 +27,31 @@ export const Container = styled.div`
 
     button:hover{
         background: #523b87;
+    }
+`;
+
+export const ApiContainer = styled.div`
+    background: ${props => props.theme.colors.primary};
+    padding: 30px 50px;
+    border-radius: 16px;
+    margin-top: 60px;
+    
+    h1{
+        font-size: 48px;
+        color: ${props => props.theme.colors.text};
+    }
+
+    p{
+        margin-top: 25px;
+    }
+
+    p a{
+        text-decoration: none;
+        color: #c4abff;
+        transition: color 0.5s;
+    }
+
+    p a:hover{
+        color: ${props => props.theme.colors.text}
     }
 `;
